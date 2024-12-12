@@ -1,0 +1,3 @@
+# Elixir Enum.each Exception Handling
+
+This repository demonstrates a common issue when using `Enum.each` in Elixir: unhandled exceptions within the anonymous function passed to `Enum.each`.  The code attempts to print elements of a list, but exits prematurely when a specific condition is met. This is because `Enum.each` doesn't provide exception handling for the function it iterates over, leading to process termination. The solution showcases using `Enum.try_each` to safely handle exceptions and avoid premature termination.
